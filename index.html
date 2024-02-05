@@ -26,6 +26,10 @@ border: solid black;
 body::-webkit-scrollbar {
   display: none; /* for Chrome, Safari, and Opera */
 }
+    body::-webkit-scrollbar {
+    display: none;
+}
+
 nav{
   border: solid black;
 background-color: white;
@@ -654,6 +658,8 @@ function handleSearch(event) {
 
 // Call the method to add search functionality to the website
 addSearchFunctionality();
+
+        document.body.style.overflow = 'hidden';
 
           </script>
         
