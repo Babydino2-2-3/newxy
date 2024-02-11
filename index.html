@@ -323,6 +323,8 @@ border: solid black;
 }
 .flexdiv{
 display: flex;
+animation: flexdiv  1s forwards ;
+
 }
 .sidediv{
 
@@ -341,6 +343,17 @@ margin-left: 10px;
 margin-right: 10px;
 margin-bottom: 10px;
 }
+@keyframes flexdiv{
+            0%{
+                transform: translateY(100%);
+                opacity: 0%;
+            }
+
+            100%{
+                transform: translateY(0%);
+                opacity: 100%;
+            }
+        }
 </style>
  
 
