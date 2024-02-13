@@ -80,11 +80,13 @@ backdrop-filter: blur(7px);
     text-align: center;
     margin-top: 10px;
 }
+audio{
+    margin-bottom: 10px;
+    transform: translateY(50%);
+}
     </style>
 </head>
 <body>
-    <audio autoplay="loop" src="./Fifty-Fifty-Cupid-Twin-Version-(Gospeljingle.com).mp3"></audio>
-
     <div class="body">
         <div class="img">
             <img src="https://th.bing.com/th/id/R.9dee6bd0f7d7d95c7a0002837bc1127d?rik=0gqQ1reh%2biNBOQ&pid=ImgRaw&r=0" width="170px" height="fit-content">
@@ -97,8 +99,10 @@ backdrop-filter: blur(7px);
     <a href="#"  ><button class="no" onclick="handleClick()" > NO</button></a>
 
     </div>
+    <audio id="myAudio" src="./Fifty-Fifty-Cupid-Twin-Version-(Gospeljingle.com).mp3" autoplay controls ></audio>
 
 </div>
+
 <script>
         let clickCount = 0;
     function handleClick() {
@@ -136,6 +140,8 @@ backdrop-filter: blur(7px);
         
 
     }
+        var audio = document.getElementById("myAudio");
+        audio.play();
 
 </script>
 </body>
