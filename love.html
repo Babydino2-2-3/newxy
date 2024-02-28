@@ -104,41 +104,28 @@ audio{
 </div>
 
 <script>
+    const dialogue = [
+        'ARE you sure that u wanna click no',
+        'Are u relly relly sure u wanna click no',
+        'pls stop clicking no',
+        'pls iam begging',
+        'bruhhhh plssssssssssssss',
+        'if you click no one more time iam gonna cry',
+        'YOU made me sad',
+        'pls pls pls',
+        'i cant live without you',
+        'pls your the most beutiful girl i ever seen',
+        'pls stop clicking no',
+        'pls iam begging',
+        'OK i acpect You dont like me U broke my heart'
+    ]
         let clickCount = 0;
     function handleClick() {
         clickCount++;
-        if (clickCount === 1) {
-            alert('ARE you sure that u wanna click no');
-        } else if (clickCount === 2) {
-            alert('Are u relly relly sure u wanna click no');
-        } else if (clickCount === 3) {
-            alert('pls stop clicking no');
-        } else if (clickCount === 4) {
-            alert('pls iam begging');
-        } else if (clickCount === 5) {
-            alert('bruhhhh plssssssssssssss')
-        }  else if (clickCount === 6) {
-            alert('if you click no one more time iam gonna cry');
-        } else if (clickCount === 7) {
-            alert('YOU made me sad');
-        } else if (clickCount === 8) {
-            alert('pls pls pls');
-        } else if (clickCount === 9) {
-            alert('i cant live without you');
-        }  else if (clickCount === 10) {
-            alert('pls your the most beutiful girl i ever seen');
-        } else if (clickCount === 11) {
-            alert('pls stop clicking no');
-        } else if (clickCount === 12) {
-            alert('pls iam begging');
-        } else if (clickCount === 13) {
-            alert('OK i acpect You dont like me U broke my heart');
-        } else if (clickCount === 14) {
+        alert(dialogue[clickCount])
+        if (clickCount > 13) {
             window.location.href ='https://www.youtube.com/watch?v=L3ePYwgirfU';
         }
-
-        
-
     }
         var audio = document.getElementById("myAudio");
         audio.play();
